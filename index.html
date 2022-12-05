@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Погода</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+            <h1 class="weather__h1">Погода</h1>
+            <p class="weather__location p">Местоположение: <span class="weather__location-span"></span></p>
+            <p class="weather__temperature p">Температура: <span class="weather__temperature-span"></span></p>
+            <p class="weather__temperature-feelings p">Ощущается как: <span class="temperature-feelings__span"></span></p>
+            <p class="weather__weather-conditions p">Погодные условия: <span class="weather__weather-conditions-span"></span></p>
+            <p class="weather__wind p">Ветер: <span class="weather__wind-span"></span></p>
+            <p class="weather__humidity p">Влажность: <span class="weather__humidity-span"></span></p>  
+            <p class="weather__pressure p">Давление: <span class="weather__pressure-span"></span></p>  
+            <p class="weather__visibility p">Видимость: <span class="weather__visibility-span"></span></p>
+        </div>
+        <button class="btn-change">Сменить город</button>
+        <div class="location">
+            <form action="#">
+                <p class="location__p p">Введите название вашего города</p>
+                    <input type="text" placeholder="Москва" class="location__input">
+                    <button class="location__button">Ок</button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./js/weatherByCoords.js"></script>
+    <script type="module" src="./js/weatherByCityName.js"></script>
+</body>
+</html>
