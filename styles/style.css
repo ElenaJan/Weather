@@ -15,7 +15,7 @@ a:focus, a:active {
     outline: none;
 }
 html, body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     font-size: 100%;
     line-height: 1.2;
