@@ -1,3 +1,4 @@
+/* Обнуление */
 * {
     padding: 0;
     margin: 0;
@@ -8,14 +9,17 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 :focus,:active {
     outline: none;
 }
+
 a:focus, a:active {
     outline: none;
 }
+
 html, body {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     font-size: 100%;
     line-height: 1.2;
@@ -25,6 +29,35 @@ html, body {
     -moz-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
+
+input, button, textarea {
+    font-family: inherit;
+}
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+
+/***/
 
 body {
     background-image: url(../img/background.svg);
@@ -162,4 +195,3 @@ body {
 .swal2-confirm:hover {
     background: #15487e !important;
 }
-
